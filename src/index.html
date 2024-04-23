@@ -10,9 +10,14 @@
 
 <body>
   <main>
-    <!-- <h1>Vanilla JavaScript App</h1> -->
-    <iframe src="https://prod-useast-a.online.tableau.com/#/site/atlantafirerescuedepartment/views/TableauCallVolume/AdvMap?:showVizHome=no&:embed=true"
- width="1000" height="1000"></iframe>
+    <script type='module' src='https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+      <tableau-viz
+        id='tableau-viz'
+        src='https://prod-useast-a.online.tableau.com/t/atlantafirerescuedepartment/views/TableauCallVolume/AdvMap/6a43820a-2007-409f-8d83-84fb22f6be2f/f2aee304-d58b-435b-81a3-4c4c82d736c4'
+        width='1600'
+        height='2064'
+        toolbar='bottom' >
+      </tableau-viz>
   </main>
 </body>
 
